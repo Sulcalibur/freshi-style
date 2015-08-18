@@ -1,0 +1,14 @@
+{
+  "name": "freshi-style",
+  "version": "1.0.0",
+  "description": "Starter package using commonly used frameworks",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "framework"
+  ],
+  "author": "Suleiman Leadbitter",
+  "license": "MIT"
+}

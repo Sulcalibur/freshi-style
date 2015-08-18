@@ -1,0 +1,24 @@
+{
+  "name": "freshi-style",
+  "version": "0.0.1",
+  "authors": [
+    "Suleiman Leadbitter <suleiman.leadbitter@gmail.com>"
+  ],
+  "description": "Starter framework",
+  "main": "main",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "starter"
+  ],
+  "license": "MIT",
+  "homepage": "http://suljam.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
