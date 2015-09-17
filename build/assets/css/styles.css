@@ -1,0 +1,11 @@
+html * {
+  background: rgba(0,0,0,0.05);
+}
+body {
+  background: #fff;
+  color: #49629d;
+}
+.container {
+  width: 1400px;
+  margin: auto;
+}
