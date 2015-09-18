@@ -1,15 +1,16 @@
-var gulp        = require('gulp'),
-    jade        = require('gulp-jade'),
-    prettify    = require('gulp-prettify'),
-    stylus      = require('gulp-stylus'),
-    browserSync = require('browser-sync'),
-    uglify      = require('gulp-uglify'),
-    minifycss   = require('gulp-minify-css'),
-    rename      = require('gulp-rename'),
-    coffee      = require('gulp-coffee'),
-    concat      = require('gulp-concat'),
-    sourcemaps  = require('gulp-sourcemaps'),
-    watch       = require('gulp-watch')
+var gulp         = require('gulp'),
+    jade         = require('gulp-jade'),
+    prettify     = require('gulp-prettify'),
+    stylus       = require('gulp-stylus'),
+    browserSync  = require('browser-sync'),
+    uglify       = require('gulp-uglify'),
+    minifycss    = require('gulp-minify-css'),
+    rename       = require('gulp-rename'),
+    coffee       = require('gulp-coffee'),
+    autoprefixer = require('gulp-autoprefixer'),
+    concat       = require('gulp-concat'),
+    sourcemaps   = require('gulp-sourcemaps'),
+    watch        = require('gulp-watch')
 ;
 
 gulp.task('styles', function() {
@@ -17,6 +18,7 @@ gulp.task('styles', function() {
   .pipe(sourcemaps.init())
   .pipe(stylus())
   .pipe(minifycss())
+  .pipe(autoprefixer())
   .pipe(sourcemaps.write())
   .pipe(gulp.dest('build/assets/css/'));
 });
