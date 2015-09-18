@@ -1,18 +1,23 @@
-doctype html
-html(lang="en")
-  head
-    title= pageTitle
-    link(href='assets/css/styles.css', rel='stylesheet', type='text/css')
+extends templates/master
+append config
+  - var PageTitle = "This is working Woohoo!"
+  - var jQuery = true
+  - var Modernizr = true
+  - var PageSlug = "AwesomePage"
+block body
   body
     h1 Jade - node template engine
     #container.col
-      if youAreUsingJade
-        p You are amazing
-      else
-        p Get on it!
       p.
         Jade is a terse and simple
         templating language with a
         strong focus on performance
         and powerful features.
-ace
+      ul
+        li This is something
+        li This is something else
+        li This is another thing
+        li This is also something
+        li This is teh Last thing
+      img(src='https://images.unsplash.com/photo-1439396087961-98bc12c21176?q=80&fm=jpg&s=bce7579fe32b464cc2d53c5c144a2de4')
+    include templates/footer

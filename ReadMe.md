@@ -8,3 +8,11 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ut, voluptas
 - Jeet
 - Typographic
 - Rupture
+
+## Bower
+- Jeet
+- jQuery
+- Animate.css
+- wow.js
+- Modernizr
+- Normalize.styl
