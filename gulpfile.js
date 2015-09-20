@@ -10,11 +10,18 @@ var gulp         = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     concat       = require('gulp-concat'),
     sourcemaps   = require('gulp-sourcemaps'),
+    postcss      = require('gulp-postcss'),
+    csswring     = require('csswring'),
     watch        = require('gulp-watch')
 ;
 
+var processors = [
+  csswring
+];
+
 gulp.task('styles', function() {
   gulp.src('project/assets/styles/styles.styl')
+  .pipe(postcss(processors))
   .pipe(sourcemaps.init())
   .pipe(stylus())
   .pipe(minifycss())
