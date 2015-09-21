@@ -1,33 +1,34 @@
 var gulp         = require('gulp'),
     jade         = require('gulp-jade'),
+    postcss      = require('gulp-postcss'),
     prettify     = require('gulp-prettify'),
     stylus       = require('gulp-stylus'),
     browserSync  = require('browser-sync'),
     uglify       = require('gulp-uglify'),
-    minifycss    = require('gulp-minify-css'),
     rename       = require('gulp-rename'),
     coffee       = require('gulp-coffee'),
-    autoprefixer = require('gulp-autoprefixer'),
     concat       = require('gulp-concat'),
     sourcemaps   = require('gulp-sourcemaps'),
-    postcss      = require('gulp-postcss'),
-    csswring     = require('csswring'),
+    // csswring     = require('csswring'),
+    lost     = require('lost'),
+    autoprefixer = require('autoprefixer');
     watch        = require('gulp-watch')
 ;
 
-var processors = [
-  csswring
-];
-
 gulp.task('styles', function() {
-  gulp.src('project/assets/styles/styles.styl')
-  .pipe(postcss(processors))
-  .pipe(sourcemaps.init())
-  .pipe(stylus())
-  .pipe(minifycss())
-  .pipe(autoprefixer())
-  .pipe(sourcemaps.write())
-  .pipe(gulp.dest('build/assets/css/'));
+  var processors = [
+    lost,
+    autoprefixer({browsers: ['last 2 version']})
+    // csswring
+  ];
+
+  return gulp.src('project/assets/styles/styles.styl')
+    .pipe(sourcemaps.init())
+    .pipe(stylus())
+    .pipe(postcss(processors))
+    // .pipe(minifycss())
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('build/assets/css/'));
 });
 
 gulp.task('markup', function() {

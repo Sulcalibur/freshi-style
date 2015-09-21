@@ -29,9 +29,16 @@
     "gulp-uglifycss": "^1.0.4",
     "gulp-watch": "^3.0.0",
     "main-bower-files": "^2.9.0",
+    "poststylus": "^0.2.1",
     "uglify-js": "^2.4.16"
   },
   "devDependencies": {
-    "csswring": "^4.0.0"
+    "autoprefixer": "^6.0.3",
+    "autoprefixer-core": "^6.0.1",
+    "cssnext": "^1.8.4",
+    "csswring": "^4.0.0",
+    "lost": "^6.6.1",
+    "nib": "^1.1.0",
+    "precss": "^1.1.3"
   }
 }
