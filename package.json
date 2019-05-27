@@ -25,7 +25,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-stylus": "^2.0.6",
-    "gulp-uglify": "^1.4.1",
+    "gulp-uglify": "^3.0.2",
     "gulp-uglifycss": "^1.0.4",
     "gulp-watch": "^3.0.0",
     "main-bower-files": "^2.9.0",
