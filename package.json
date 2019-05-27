@@ -37,7 +37,7 @@
     "autoprefixer-core": "^6.0.1",
     "cssnext": "^1.8.4",
     "csswring": "^4.0.0",
-    "lost": "^6.6.1",
+    "lost": "^8.3.1",
     "nib": "^1.1.0",
     "precss": "^1.1.3"
   }
