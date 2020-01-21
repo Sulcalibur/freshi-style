@@ -30,7 +30,7 @@
     "gulp-watch": "^3.0.0",
     "main-bower-files": "^2.9.0",
     "poststylus": "^0.2.1",
-    "uglify-js": "^2.4.16"
+    "uglify-js": "^3.7.6"
   },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
